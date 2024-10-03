@@ -54,7 +54,7 @@ plt.axis('off')
 
 ### Display the result of Hough transform
 ```python
-lines = cv2.HoughLinesP(canny_edges, rho=1, theta=np.pi/180, threshold=100, minLineLength=50, maxLineGap=10)
+lines = cv2.HoughLinesP(canny_edges, rho=1, theta=np.pi/180, threshold=100, minLineLength=100, maxLineGap=100)
 output_image = image.copy()
 
 if lines is not None:
@@ -65,7 +65,7 @@ plt.imshow(cv2.cvtColor(output_image, cv2.COLOR_BGR2RGB))
 plt.title('Hough Transform - Line Detection')
 plt.axis('off')
 ```
-![image](https://github.com/user-attachments/assets/1a6cb66d-7724-432b-b08f-d0e3ed180042)
+![image](https://github.com/user-attachments/assets/59d26d04-f1db-470a-8016-4456a8dffa16)
 
 ## Result
 Thus,The Python program to detect the lines using Hough Transform run successfully.
